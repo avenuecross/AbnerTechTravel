@@ -7,4 +7,4 @@ Cortex-M处理器有一套异常处理机制，它可以侦测以下的一些异
 * BusFault: detects memory access errors on instruction fetch, data read/write, interrupt vector fetch, and register stacking (save/restore) on interrupt (entry/exit).
 * UsageFault: detects execution of undefined instructions, unaligned memory access for load/store multiple. When enabled, divide-by-zero and other unaligned memory accesses are detected.
 
-![Fault Priority](/image/Fault_Priority.PNG)
+![Fault Priority](/Fault_Priority.PNG)
