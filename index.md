@@ -2,6 +2,4 @@
 
 Here's the space Abner makes logs.
 
-
-http://github.com - automatic!
-[GitHub](http://github.com)
+The blog is managed by markdown. In case I forget the way to use it, put a reference here.[Markdown Reference](https://avenuecross.github.io/AbnerTechTravel/Markdown.md)
