@@ -1,5 +1,5 @@
-# Welcome to Abner's Blog:kissing_heart:
-
+# Welcome to Abner's Blog :kissing_heart:
+:kissing_heart:
 Abner will make logs here when he's traveling through the tech world.
 
 The blog is managed by markdown. In case I forget the way to use it, put a reference here. [Markdown Reference](https://avenuecross.github.io/AbnerTechTravel/Markdown)
