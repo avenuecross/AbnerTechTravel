@@ -1,9 +1,11 @@
 GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 Headers
+```markdown
 # Header 1    (large font)
 ## Header 2
 ### Header 3
+```
 
 ```markdown
 Syntax highlighted code block
