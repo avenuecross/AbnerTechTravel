@@ -6,7 +6,6 @@ The blog is managed by markdown. In case I forget the way to use it, put a refer
 
 Hardware Peripherals:
 * [NAND Flash](https://avenuecross.github.io/AbnerTechTravel/NandFlash)
-
 ARM core:
 * [ARM Assembly](https://avenuecross.github.io/AbnerTechTravel/ARM_Assembly)
 * [ARM Exception Handler](https://avenuecross.github.io/AbnerTechTravel/ARM_Exception_Handler)
