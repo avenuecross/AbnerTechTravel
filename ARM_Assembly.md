@@ -18,14 +18,14 @@ instruct suffix<br>
 **S** signed or change CPSR flag<br>
 
 For ldm,stm
-**ia**先传输再地址+4<br>
-**ib**先地址+4再传输<br>
-**da**先传输再地址-4<br>
-**db**先地址-4再传输<br>
-**fd**满递减堆栈<br>
-**ed**空递减堆栈<br>
-**fa**满递增堆栈<br>
-**ea**空递增堆栈<br>
+**ia** 先传输再地址+4<br>
+**ib** 先地址+4再传输<br>
+**da** 先传输再地址-4<br>
+**db** 先地址-4再传输<br>
+**fd** 满递减堆栈<br>
+**ed** 空递减堆栈<br>
+**fa** 满递增堆栈<br>
+**ea** 空递增堆栈<br>
 
 and 逻辑与<br>
 orr 逻辑或<br>
