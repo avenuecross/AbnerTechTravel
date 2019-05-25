@@ -20,6 +20,6 @@ instruct suffix<br>
 and 逻辑与
 orr 逻辑或
 eor 逻辑异或
-bic 位清除
+bic 位清除  // bic r0, r0, #0x1
 
 
