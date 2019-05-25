@@ -17,9 +17,9 @@ instruct suffix<br>
 **H** operate length becomes 16-bit<br>
 **S** signed or change CPSR flag<br>
 
-and 逻辑与
-orr 逻辑或
-eor 逻辑异或
+and 逻辑与<br>
+orr 逻辑或<br>
+eor 逻辑异或<br>
 bic 位清除  // bic r0, r0, #0x1
 
 
