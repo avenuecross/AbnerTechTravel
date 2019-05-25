@@ -22,4 +22,10 @@ orr 逻辑或<br>
 eor 逻辑异或<br>
 bic 位清除  // bic r0, r0, #0x1
 
+CPSR需要特别的指令<br>
+```markdown
+mrs r0, cpsr
+bic r0, r0, #0x1f
+msr cpsr, r0
+```
 
