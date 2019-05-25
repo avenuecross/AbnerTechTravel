@@ -17,6 +17,16 @@ instruct suffix<br>
 **H** operate length becomes 16-bit<br>
 **S** signed or change CPSR flag<br>
 
+For ldm,stm
+**ia**先传输再地址+4
+**ib**先地址+4再传输
+**da**先传输再地址-4
+**db**先地址-4再传输
+**fd**满递减堆栈
+**ed**空递减堆栈
+**fa**满递增堆栈
+**ea**空递增堆栈
+
 and 逻辑与<br>
 orr 逻辑或<br>
 eor 逻辑异或<br>
