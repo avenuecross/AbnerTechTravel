@@ -10,7 +10,7 @@ mov r0, r1, lsl #3 // r0 = r1*8
 ldr r1, [r2]
 ldr r1, [r2, #4]
 ldmia r1!, {r2-r7, r12}  // load {...} register data into the memory based on address which r1 stores
-stmfd sp!, {r2-r7, lr}
+stmfd sp!, {r2-r7, lr}^ // ^将spsr写入cpsr
 ```
 instruct suffix<br>
 **B** operate length becomes 8-bit<br>
