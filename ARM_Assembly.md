@@ -12,7 +12,14 @@ ldr r1, [r2, #4]
 ldmia r1!, {r2-r7, r12}  // load {...} register data into the memory based on address which r1 stores
 stmfd sp!, {r2-r7, lr}
 ```
-instruct suffix
-**B** operate length becomes 8-bit
-**H** operate length becomes 16-bit
-**S** signed or change CPSR flag
+instruct suffix<br>
+**B** operate length becomes 8-bit<br>
+**H** operate length becomes 16-bit<br>
+**S** signed or change CPSR flag<br>
+
+and 逻辑与
+orr 逻辑或
+eor 逻辑异或
+bic 位清除
+
+
