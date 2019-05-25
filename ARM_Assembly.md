@@ -29,3 +29,9 @@ bic r0, r0, #0x1f
 msr cpsr, r0
 ```
 
+b 直接跳转<br>
+bl 保存lr返回的跳转<br>
+bx 切换到ARM模式，一般用于异常处理的跳转<br>
+```markdown
+swp r1, r1, [r0] //交换register和memory的内容
+```
