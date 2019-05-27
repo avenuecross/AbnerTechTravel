@@ -12,12 +12,12 @@ ldr r1, [r2, #4]
 ldmia r1!, {r2-r7, r12}  // load {...} register data into the memory based on address which r1 stores
 stmfd sp!, {r2-r7, lr}^ // ^将spsr写入cpsr，一般从异常模式返回
 ```
-instruct suffix<br>
+##Instruct Suffix<br>
 **B** operate length becomes 8-bit<br>
 **H** operate length becomes 16-bit<br>
 **S** signed or change CPSR flag<br>
 
-For ldm,stm
+For ldm,stm<br>
 **ia** 先传输再地址+4<br>
 **ib** 先地址+4再传输<br>
 **da** 先传输再地址-4<br>
