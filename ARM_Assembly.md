@@ -12,7 +12,7 @@ ldr r1, [r2, #4]
 ldmia r1!, {r2-r7, r12}  // load {...} register data into the memory based on address which r1 stores
 stmfd sp!, {r2-r7, lr}^ // ^将spsr写入cpsr，一般从异常模式返回
 ```
-##Instruct Suffix<br>
+## Instruct Suffix<br>
 **B** operate length becomes 8-bit<br>
 **H** operate length becomes 16-bit<br>
 **S** signed or change CPSR flag<br>
@@ -32,13 +32,6 @@ orr 逻辑或<br>
 eor 逻辑异或<br>
 bic 位清除  // bic r0, r0, #0x1
 
-CPSR需要特别的指令<br>
-```markdown
-mrs r0, cpsr
-bic r0, r0, #0x1f
-msr cpsr, r0
-```
-
 b 直接跳转<br>
 bl 保存lr返回的跳转<br>
 bx 切换到ARM模式，一般用于异常处理的跳转<br>
@@ -46,6 +39,13 @@ bx 切换到ARM模式，一般用于异常处理的跳转<br>
 swp r1, r1, [r0] //交换register和memory的内容
 ```
 合法立即数-移位后非零部分可用8位表示，主要是用在纯指令场合，伪指令不会有这个问题
+
+CPSR需要特别的指令<br>
+```markdown
+mrs r0, cpsr
+bic r0, r0, #0x1f
+msr cpsr, r0
+```
 
 mrc-读取CP15中的寄存器<br>
 mcr-写入CP15中的寄存器<br>
