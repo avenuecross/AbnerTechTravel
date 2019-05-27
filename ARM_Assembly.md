@@ -1,4 +1,4 @@
-Sometimes we need to read even write ARM assembly code. I put some universal instructs here for reference.
+Sometimes we need to read and even write ARM assembly code. I put some universal instructs here for reference.
 
 **ldr** load memory data to register
 **str** store register data to memory
