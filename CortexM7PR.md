@@ -18,4 +18,9 @@ Unprivileged software can use the SVC instruction to make a supervisor call to t
 
 ## Stack
 M7 uses a full descending stack.
+The processor implements two stacks, the main stack and the process stack, with a pointer for each held in independent registers.
+In Thread mode, bit[1] of the CONTROL register indicates the stack pointer to use: 0 -- MSP(reset is 0) 1 -- PSP.
+On reset, the processor loads the MSP with the value from the implementation-defined address 0x00000000.
 
+
+On reset, the processor sets the LR value to 0xFFFFFFFF.
