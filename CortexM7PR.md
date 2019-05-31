@@ -25,6 +25,11 @@ On reset, the processor loads the MSP with the value from the implementation-def
 
 On reset, the processor sets the LR value to 0xFFFFFFFF.
 
-
+The Cortex-M7 processor only supports execution of instructions in Thumb state.
+The following can clear the T bit to 0:<br>
+• Instructions BLX, BX, LDR pc, [], and POP{PC}.<br>
+• Restoration from the stacked xPSR value on an exception return.<br>
+• Bit[0] of the vector value on an exception entry or reset.<br>
+Attempting to execute instructions when the T bit is 0 results in a fault or lockup.<br>
 
 
