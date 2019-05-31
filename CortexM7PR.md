@@ -6,9 +6,9 @@ The processor modes:<br>
 * Handler mode --> Used to handle exceptions. The processor returns to Thread mode when it has finished all exception processing.<br>
 
 The privilege levels for software execution:<br>
-* Unprivileged --> 1. Has limited access to the MSR and MRS instructions, and cannot use the CPS instruction
-                   2. Cannot access the system timer, NVIC, or system control block.
-                   3. Might have restricted access to memory or peripherals.
+* Unprivileged --> 1. Has limited access to the MSR and MRS instructions, and cannot use the CPS instruction<br>
+                   2. Cannot access the system timer, NVIC, or system control block.<br>
+                   3. Might have restricted access to memory or peripherals.<br>
 * Privileged --> The software can use all the instructions and has access to all resources. Privileged software executes at the privileged level.
 
 In Thread mode, the CONTROL register controls whether software execution is privileged or unprivileged, see CONTROL register on page 2-9.
@@ -17,10 +17,14 @@ Only privileged software can write to the CONTROL register to change the privile
 Unprivileged software can use the SVC instruction to make a supervisor call to transfer control to privileged software.
 
 ## Stack
-M7 uses a full descending stack.
+M7 uses a full descending stack.<br>
 The processor implements two stacks, the main stack and the process stack, with a pointer for each held in independent registers.
 In Thread mode, bit[1] of the CONTROL register indicates the stack pointer to use: 0 -- MSP(reset is 0) 1 -- PSP.
 On reset, the processor loads the MSP with the value from the implementation-defined address 0x00000000.
 
 
 On reset, the processor sets the LR value to 0xFFFFFFFF.
+
+
+
+
