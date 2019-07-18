@@ -4,6 +4,9 @@ Abner will make logs here as traveling through the tech world.
 
 The blog is managed by markdown. In case I forget the way to use it, put a reference here. [Markdown Reference](https://avenuecross.github.io/AbnerTechTravel/Markdown)
 
+C language:
+* [C operator priority](https://avenuecross.github.io/AbnerTechTravel/C_Priority)
+
 Hardware Peripherals:
 * [NAND Flash](https://avenuecross.github.io/AbnerTechTravel/NandFlash)
 
