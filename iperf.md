@@ -13,3 +13,6 @@ Client/Server:
 
 Server specific:
   -s, --server             run in server mode
+
+Client specific:
+  -c, --client    <host>   run in client mode, connecting to <host>
