@@ -3,7 +3,7 @@ Iperf还有一个图形界面程序叫做Jperf，使用JPerf程序能简化了�
 在适当的地方，选项中可以使用K（kilo-）和M（mega-）。例如131072字节可以用128K代替。<br>
 
 ```markdown
-example:
+Example:
 iperf -s -p 5001 -i 1 -M
 
 Client/Server:
