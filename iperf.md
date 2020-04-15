@@ -4,7 +4,7 @@ Iperf还有一个图形界面程序叫做Jperf，使用JPerf程序能简化了�
 
 ```markdown
 Example:
-iperf -s -p 5001 -i 1 -M
+iperf -s -p 5001 -i 1
 
 Client/Server:
   -f, --format    [kmKM]   format to report: Kbits, Mbits, KBytes, MBytes
