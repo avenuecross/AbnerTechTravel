@@ -32,4 +32,6 @@ The following can clear the T bit to 0:<br>
 • Bit[0] of the vector value on an exception entry or reset.<br>
 Attempting to execute instructions when the T bit is 0 results in a fault or lockup.<br>
 
+Cortex-M7 speculative access:
+https://developer.arm.com/docs/ddi0489/f/memory-system/speculative-accesses.
 
