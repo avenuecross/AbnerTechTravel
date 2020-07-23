@@ -28,7 +28,7 @@ For ldm,stm<br>
 **ea** 空递增堆栈<br>
 
 and 逻辑与<br>
-orr 逻辑或<br>
+orr 逻辑或  ORR R0, R0, #3<br>
 eor 逻辑异或<br>
 bic 位清除  // bic r0, r0, #0x1
 
