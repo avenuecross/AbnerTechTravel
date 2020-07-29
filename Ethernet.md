@@ -4,3 +4,5 @@ PHY is a standard module in IEEE802.3. STA(station management entity, MAC or CPU
 
 ![GitHub Logo](/images/NetCable.jpg)
 
+Most PHYs have auto MDI-X feature, so stright or cross cable are all OK for application.
+
