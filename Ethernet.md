@@ -7,3 +7,6 @@ Most PHYs have auto MDI-X feature, so stright or cross cable are all OK for appl
 
 [Hardware Design](https://www.pianshen.com/article/6827360824/)
 
+RGMII
+TXC/RXC 1.5-2ns延迟
+修改PCB设计（例如：使用专门设计的蛇形）
