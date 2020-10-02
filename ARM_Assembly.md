@@ -57,3 +57,5 @@ Keil MDK的ABI要求在函数调用时，系统必须保证堆栈指针8byte对�
 为了解决这种情况，我们可以将另外一个并不需要压栈的寄存器R12，同时压栈，这样当6个32位寄存器进栈之后，堆栈就能满足64位对齐了。<br>
 STMFD sp!, {r0-r3, lr}<br>
 STMFD sp!, {r0-r3, r12, lr}<br>
+
+Reference Document: https://beginners.re/RE4B-CN-partial/html/RE4B-CN-partial.html
