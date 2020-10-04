@@ -1,12 +1,13 @@
-This page lists some ARM assembly usage. Put some universal instructs here for reference.
+This page lists some ARM assembly usage. Put some universal knowledge here for reference.
 
 ## ARM Assembly Call Interface
 ATPCS(ARM-Thumb Procedure Call Standard) and AAPCS(ARM Archtecture Procedure Call Standard)
 AAPCS is the improvement version of ATPCS.
 # Register
-R0~R3 for 4 input parameters and R0 for return value(plus R1 if u64 type), R4~R11 for local variants.
+R0-R3 for 4 input parameters and R0 for return value(plus R1 if u64 type), R4-R11 for local variants.
 # Stack
-
+Full Descending满递减堆栈
+ATPCS规定,堆栈操作8字节对齐,经常使用的指令有STMFD和LDMFD.
 
 **ldr** load memory data to register
 **str** store register data to memory
