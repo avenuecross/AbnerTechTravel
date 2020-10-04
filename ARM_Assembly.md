@@ -4,7 +4,19 @@ This page lists some ARM assembly usage. Put some universal knowledge here for r
 ATPCS(ARM-Thumb Procedure Call Standard) and AAPCS(ARM Archtecture Procedure Call Standard)
 AAPCS is the improvement version of ATPCS.
 ## Register
-R0-R3 for 4 input parameters and R0(plus R1 for u64 type) for return value, R4-R11 for local variants.
+R0-R3 for 4 input parameters and R0(plus R1 for u64 type) for return value
+R4-R11 for local variants.
+R12 Call temp register
+R13 Stack pointer
+R14 Link register
+R15 PC
+
+参数个数可变子程序参数传递规则
+对于参数个数可变的子程序，当参数个数不超过4个时，可以使用寄存器R0～R3来传递参数；当参数超过4个时，还可以使用堆栈来传递参数。
+在传递参数时，将所有参数看作是存放在连续的内存字单元的字数据。然后，依次将各字数据传递到寄存器R0，R1，R2和R3中。如果参数多于4个，则将剩余的字数据传递到堆栈中。入栈的顺序与参数传递顺序相反，即最后一个字数据先入栈。
+参数个数固定子程序参数传递规则
+如果系统不包含浮点运算的硬件部件，浮点参数会通过相应的规则转换成整数参数（若没有浮点参数，此步省略），然后依次将各字数据传送到寄存器R0～R3中。如果参数多于4个，将剩余的字数据传送堆栈中，入栈的顺序与参数顺序相反，即最后一个字数据先入栈。在参数传递时，将所有参数看作是存放在连续的内存字单元的字数据。
+
 ## Stack
 Full Descending满递减堆栈
 ATPCS规定,堆栈操作8字节对齐,经常使用的指令有STMFD和LDMFD.
