@@ -1,4 +1,12 @@
-Sometimes we need to read and even write ARM assembly code. I put some universal instructs here for reference.
+This page lists some ARM assembly usage. Put some universal instructs here for reference.
+
+## ARM Assembly Call Interface
+ATPCS(ARM-Thumb Procedure Call Standard) and AAPCS(ARM Archtecture Procedure Call Standard)
+AAPCS is the improvement version of ATPCS.
+# Register
+R0~R3 for 4 parameters, R4~R11 for local variants
+# Stack
+
 
 **ldr** load memory data to register
 **str** store register data to memory
