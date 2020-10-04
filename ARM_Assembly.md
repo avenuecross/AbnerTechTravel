@@ -4,7 +4,7 @@ This page lists some ARM assembly usage. Put some universal instructs here for r
 ATPCS(ARM-Thumb Procedure Call Standard) and AAPCS(ARM Archtecture Procedure Call Standard)
 AAPCS is the improvement version of ATPCS.
 # Register
-R0~R3 for 4 parameters, R4~R11 for local variants
+R0~R3 for 4 input parameters and R0 for return value(plus R1 if u64 type), R4~R11 for local variants.
 # Stack
 
 
