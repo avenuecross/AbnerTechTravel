@@ -12,6 +12,9 @@ HardFault异常总是使能并且有一个固定的优先级，比一般中断�
 MemManageFault和BusFault和UsageFault都有可编程优先级，reset后这些异常会disable，可以在System Control Block(SCB)中enable。所以没有配置它们的话，所有这些异常都会触发HardFault。
 BusFaults可以细分为两层，同步和异步的bus faults，查看**BFSR**判断是同步(IMPRECISERR)还是异步(PRECISERR)的bus faults。
 
+![Fault Register](/images/FaultRegister1.PNG)
+![Fault Register](/images/FaultRegister2.PNG)
+
 
 ## Debugging faults with μVision®
 
